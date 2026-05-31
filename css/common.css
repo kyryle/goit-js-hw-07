@@ -13,8 +13,6 @@ body {
   line-height: 1.5;
 }
 
-.li-img-flexbox {
-  display: flex;
-  padding: 5px;
-  border: 1px solid;
+.gallery {
+  list-style-type: none;
 }

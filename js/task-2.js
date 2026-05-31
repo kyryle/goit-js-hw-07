@@ -1,32 +1,3 @@
-const list = document.querySelector('ul.gallery')
-
-const li = document.createElement('li')
-li.classList.add('li-img-flexbox')
-
-
-const galleryAdding = (images) => {
-  for (let i = 0; i < images.length; index++) {
-    const element = images[i];
-    li.push(element)
-    list.append(li)
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const images = [
   {
     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
@@ -53,3 +24,35 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
+
+const list = document.querySelector('ul.gallery')
+
+const arr = []
+
+
+for (const image of images) {
+  const li = document.createElement('li') 
+  const img = document.createElement('img')
+  img.style.width = "250px"
+  img.src = image.url
+  img.alt = image.alt
+  li.append(img)
+  
+
+  arr.push(li)
+  console.log(arr)
+}
+
+list.append(...arr)
+
+
+
+
+
+
+
+
+
+
+
+

@@ -11,6 +11,7 @@ const spanFind = document.querySelector('span.color')
 const bodyColor = document.querySelector('body')
 
 buttonClick.addEventListener('click', () => {
-  spanFind.textContent = getRandomHexColor()
-  bodyColor.style.backgroundColor = getRandomHexColor()
+  const newColor = getRandomHexColor();
+  spanFind.textContent = newColor
+  bodyColor.style.backgroundColor = newColor
 })

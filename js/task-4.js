@@ -10,9 +10,11 @@ formListener.addEventListener('submit', event => {
         return
     }
 
-    // const data = {
-    //     email: formCollector.get('email'),
-    //     password: formCollector.get('password'),
+    const data = {
+        email: formCollector.get('email').trim(),
+        password: formCollector.get('password').trim(),
                 
-    // }
+    }
+    console.log(data)
+    formListener.reset()
 })
